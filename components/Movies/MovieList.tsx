@@ -5,7 +5,7 @@ import Movie from './ Movie'
 const MovieList = ({ movies }: { movies: movie[] }) => {
     const movieList = movies as movie[];
     return (
-        <div>
+        <div className='container'>
             {movieList.length > 0 && movieList.map((movie) => (
                 <Movie movie={movie}/>        
             ))}
